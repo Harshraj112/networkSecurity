@@ -32,7 +32,7 @@ dagshub.init(repo_owner='Harshraj112', repo_name='networkSecurity', mlflow=True)
 # Comment out DagHub configuration to use local MLflow tracking
 # os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/harshraj112/networksecurity.mlflow"
 # os.environ["MLFLOW_TRACKING_USERNAME"]="harshraj112"
-# os.environ["MLFLOW_TRACKING_PASSWORD"]="7104284f1bb44ece21e0e2adb4e36a250ae3251f"
+# os.environ["MLFLOW_TRACKING_PASSWORD"]="Harsh123Harsh"
 
 
 
