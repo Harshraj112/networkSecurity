@@ -69,7 +69,7 @@ The ML pipeline consists of six main components that work sequentially:
 
 ### Data Ingestion
 ```python
-from networksecurity.components.data_ingestion import DataIngestion
+from cybersentinel.components.data_ingestion import DataIngestion
 ```
 - Connects to MongoDB database
 - Extracts network security dataset
@@ -77,7 +77,7 @@ from networksecurity.components.data_ingestion import DataIngestion
 
 ### Data Validation
 ```python
-from networksecurity.components.data_validation import DataValidation
+from cybersentinel.components.data_validation import DataValidation
 ```
 - Validates data schema
 - Checks for missing values
@@ -86,7 +86,7 @@ from networksecurity.components.data_validation import DataValidation
 
 ### Data Transformation
 ```python
-from networksecurity.components.data_transformation import DataTransformation
+from cybersentinel.components.data_transformation import DataTransformation
 ```
 - Feature engineering
 - Categorical encoding
@@ -95,7 +95,7 @@ from networksecurity.components.data_transformation import DataTransformation
 
 ### Model Trainer
 ```python
-from networksecurity.components.model_trainer import ModelTrainer
+from cybersentinel.components.model_trainer import ModelTrainer
 ```
 - Trains ML models
 - Performs hyperparameter tuning
@@ -104,7 +104,7 @@ from networksecurity.components.model_trainer import ModelTrainer
 
 ### Model Evaluation
 ```python
-from networksecurity.components.model_evaluation import ModelEvaluation
+from cybersentinel.components.model_evaluation import ModelEvaluation
 ```
 - Evaluates model performance
 - Compares against baseline
@@ -113,7 +113,7 @@ from networksecurity.components.model_evaluation import ModelEvaluation
 
 ### Model Pusher
 ```python
-from networksecurity.components.model_pusher import ModelPusher
+from cybersentinel.components.model_pusher import ModelPusher
 ```
 - Deploys accepted models
 - Uploads to cloud storage
@@ -142,7 +142,7 @@ Each component is configured through dedicated configuration files:
 1. **Clone the repository**
 ```bash
 git clone <repository-url>
-cd networksecurity
+cd cybersentinel
 ```
 
 2. **Install dependencies**
@@ -181,7 +181,7 @@ python main.py
 ### Running Individual Components
 
 ```python
-from networksecurity.pipeline.training_pipeline import TrainingPipeline
+from cybersentinel.pipeline.training_pipeline import TrainingPipeline
 
 # Initialize and run pipeline
 pipeline = TrainingPipeline()
@@ -206,12 +206,12 @@ python push_data.py
 
 **Build Docker image:**
 ```bash
-docker build -t networksecurity .
+docker build -t cybersentinel .
 ```
 
 **Run container:**
 ```bash
-docker run -p 8080:8080 networksecurity
+docker run -p 8080:8080 cybersentinel
 ```
 
 ### EC2 Deployment
@@ -244,8 +244,8 @@ Set up the following secrets in your GitHub repository:
 ## 📁 Project Structure
 
 ```
-networksecurity/
-├── networksecurity/               # Main package
+cybersentinel/
+├── cybersentinel/               # Main package
 │   ├── components/               # Pipeline components
 │   │   ├── data_ingestion.py
 │   │   ├── data_validation.py

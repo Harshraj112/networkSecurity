@@ -1,10 +1,10 @@
-from networksecurity.constant.training_pipeline import SAVED_MODEL_DIR,MODEL_FILE_NAME
+from cybersentinel.constant.training_pipeline import SAVED_MODEL_DIR,MODEL_FILE_NAME
 
 import os
 import sys
 
-from networksecurity.exception.exception import NetworkSecurityException
-from networksecurity.logging.logger import logging
+from cybersentinel.exception.exception import NetworkSecurityException
+from cybersentinel.logging.logger import logging
 
 class NetworkModel:
     def __init__(self,preprocessor,model):
